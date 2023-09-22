@@ -3,10 +3,9 @@
 {
 	"name": "cs162",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	// "image": "cs162/workspace:latest",
 	"dockerComposeFile": "docker-compose.yml",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"service": "cs162"
+	"workspaceFolder": "/vagrant/code",
+	"service": "cs162",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -15,7 +14,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	// "postCreateCommand": "sudo usermod -a -G sudo vagrant"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

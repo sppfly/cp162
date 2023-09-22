@@ -4,6 +4,6 @@ services:
     image: cs162/workspace:latest
     tty: true
     volumes:
-      - ./.workspace:/home/vagrant
+      - ../.workspace:/home/vagrant
     ports:
       - "16222:22"
